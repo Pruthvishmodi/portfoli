@@ -1,0 +1,19 @@
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 2rem;
+}
+header > a.email {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
