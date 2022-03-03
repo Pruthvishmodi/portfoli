@@ -1,19 +1,33 @@
 body {
   max-width: 1280px;
   margin: 0 auto;
+  width: 100%;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 0;
+
+  margin: 0 2rem;
 }
 .icon {
   width: 24px;
   height: 24px;
   margin-right: 2rem;
 }
-header > a.email {
+header > a.mail {
   display: flex;
   align-items: center;
-  text-decoration: none;
+}
+header > nav > a {
+  margin-right: 2rem;
+}
+
+header > nav > a:last-child {
+  margin-right: 0;
 }
