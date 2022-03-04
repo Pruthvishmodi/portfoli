@@ -102,3 +102,17 @@ header > nav > a:last-child {
   width: 479.74px;
   height: 255.25px;
 }
+/* <!-- 4nd section of clients --> */
+.head {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  margin: 0 2rem;
+}
