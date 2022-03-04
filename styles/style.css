@@ -3,6 +3,9 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: #000;
   text-decoration: none;
@@ -30,4 +33,72 @@ header > nav > a {
 
 header > nav > a:last-child {
   margin-right: 0;
+}
+/* 2nd section of photoes */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgb(234, 240, 243);
+}
+.image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(142, 180, 204);
+  margin-bottom: 1rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  margin-top: 0.5rem;
+}
+.h2 {
+  font-size: 3.63rem;
+  line-height: 1em;
+}
+.p1 {
+  font-size: 1.525rem;
+  line-height: 1.3em;
+}
+.btn {
+  font-size: 1.125rem;
+  font-weight: 400px;
+  border-style: none;
+  line-height: 20px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+  margin-bottom: 3rem;
+}
+.all {
+  width: 775px;
+}
+
+/* <!-- 3nd section of imagies --> */
+.img1 {
+  width: 480px;
+  height: 305px;
+}
+.img2 {
+  width: 480px;
+  height: 255px;
+}
+.img3 {
+  width: 480px;
+  height: 600px;
+}
+.img4 {
+  width: 479.74px;
+  height: 305.21px;
+}
+.img5 {
+  width: 479.74px;
+  height: 255.25px;
 }
