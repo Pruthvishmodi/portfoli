@@ -116,3 +116,37 @@ header > nav > a:last-child {
   padding: 2rem 0;
   margin: 0 2rem;
 }
+/* <!-- 5th section of clients --> */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.ser {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  padding: 2rem 0;
+  margin: 2rem 2rem;
+}
+.istr {
+  width: 64px;
+  height: 64px;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.idesi {
+  width: 64px;
+  height: 64px;
+  margin-right: 2rem;
+}
+.iapp {
+  width: 64px;
+  height: 64px;
+  margin-right: 2rem;
+}
