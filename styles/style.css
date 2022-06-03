@@ -10,6 +10,10 @@ a {
   color: #000;
   text-decoration: none;
 }
+a:hover,
+a :focus {
+  opacity: 0.6;
+}
 header {
   display: flex;
   align-items: center;
@@ -42,14 +46,13 @@ header > nav > a:last-child {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  background-color: rgb(234, 240, 243);
 }
 .image {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
   object-fit: cover;
-  background-color: rgb(142, 180, 204);
+  background-color: rgb(221, 233, 240);
   margin-bottom: 1rem;
 }
 
@@ -71,37 +74,39 @@ header > nav > a:last-child {
   font-weight: 400px;
   border-style: none;
   line-height: 20px;
-  border-radius: 50px;
+  border-radius: 5rem;
   background-color: black;
   color: white;
   padding: 20px 40px;
   margin-bottom: 3rem;
+}
+button:hover {
+  background-color: rgb(240, 231, 231);
+  color: rgb(80, 145, 145);
+  box-shadow: 0, 4px, -5px rgba(red, green, blue, alpha);
 }
 .all {
   width: 775px;
 }
 
 /* <!-- 3nd section of imagies --> */
-.img1 {
-  width: 480px;
-  height: 305px;
+section#imagies {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  background-color: rgb(231, 238, 240);
+  gap: 2rem;
 }
-.img2 {
-  width: 480px;
-  height: 255px;
+
+section#imagies img {
+  object-fit: cover;
+  width: 100%;
 }
-.img3 {
-  width: 480px;
-  height: 600px;
+
+section#imagies > img:nth-child(2) {
+  grid-row: 2 span;
 }
-.img4 {
-  width: 479.74px;
-  height: 305.21px;
-}
-.img5 {
-  width: 479.74px;
-  height: 255.25px;
-}
+
 /* <!-- 4nd section of clients --> */
 .head {
   display: flex;
@@ -117,36 +122,76 @@ header > nav > a:last-child {
   margin: 0 2rem;
 }
 /* <!-- 5th section of clients --> */
-
-.heading {
+section#services > .servi {
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
-}
-.ser {
-  display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: antiquewhite;
-  box-sizing: border-box;
-  padding: 2rem 0;
-  margin: 2rem 2rem;
+  padding-top: 1rem;
 }
-.istr {
-  width: 64px;
-  height: 64px;
-  margin: 1rem;
+section#services > div.allline {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+}
+section#services {
+  background-color: rgb(232, 240, 245);
+}
+div.para-service {
+  background-color: white;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
-.idesi {
-  width: 64px;
-  height: 64px;
-  margin-right: 2rem;
+/* 6th section of Resume  */
+section#about h2.resum {
+  align-items: center;
 }
-.iapp {
-  width: 64px;
-  height: 64px;
-  margin-right: 2rem;
+section#about > Div.space {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+section#about > div.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-around;
+  margin: 2rem;
+}
+section#about > div.skil > Div.breck {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+section#about > div.skil > div.grids {
+  display: flex;
+  justify-content: space-around;
+}
+section#about > div.tool > div.pr {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-around;
+}
+section#about > div.tool > div.pr > div.joker {
+  display: flex;
+}
+/* <!-- 6th section of Work --> */
+section#work h2.thework {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  max-width: 1200px;
+}
+.row-box {
+ display: grid ;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows:repeat(2,auto) ;
+  align-items: center;
+  justify-content: center;
 }
